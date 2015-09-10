@@ -7,4 +7,5 @@ My Vim settings.
 ln -s .vim/.vimrc .vimrc
 
 ## Plugins
-* [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - lists the total number of matches and index of current match.
+* [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - Lists the total number of search results and index of current match.
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - Solarized colorscheme.

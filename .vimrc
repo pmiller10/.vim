@@ -13,3 +13,8 @@ set nu                  " line numbers
 "===== Search =====
 set hlsearch            " highlight all search results
 set incsearch           " highlight first match as you type search
+
+"===== Colorscheme =====
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
