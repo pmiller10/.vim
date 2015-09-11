@@ -1,8 +1,12 @@
 " VIM Settings
 
+
+
 "===== Package Management =====
 " load plugins in .vim/bundle directory
 execute pathogen#infect()
+
+
 
 "===== Formatting & Indentation =====
 syntax enable               " syntax highlighting
@@ -14,11 +18,16 @@ set tabstop=4               " 1 tab = 4 spaces
 set shiftwidth=4            " autoindents = 4 spaces
 set nu                      " line numbers
 
+
+
 "===== Search =====
 set hlsearch                " highlight all search results
 set incsearch               " highlight first match as you type search
 
+
+
 "===== Plugin Settings =====
+
 "solarized colorscheme:
 set background=dark
 let g:solarized_termcolors=256
@@ -26,3 +35,7 @@ colorscheme solarized
 
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+"vim-airline
+set laststatus=2            " always show the status bar
+set ttimeoutlen=50          " shorten pause after leaving insert mode
