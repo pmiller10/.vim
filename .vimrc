@@ -1,6 +1,7 @@
 " VIM Settings
 
 "===== Package Management =====
+" load plugins in .vim/bundle directory
 execute pathogen#infect()
 
 "===== Formatting & Indentation =====
@@ -17,7 +18,11 @@ set nu                      " line numbers
 set hlsearch                " highlight all search results
 set incsearch               " highlight first match as you type search
 
-"===== Colorscheme =====
+"===== Plugin Settings =====
+"solarized colorscheme:
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+"NERDTree
+map <C-n> :NERDTreeToggle<CR>
