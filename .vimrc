@@ -1,5 +1,8 @@
 " VIM Settings
 
+"===== Package Management =====
+execute pathogen#infect()
+
 "===== Formatting & Indentation =====
 syntax enable               " syntax highlighting
 filetype plugin indent on   " filetype detection (not using this yet)
