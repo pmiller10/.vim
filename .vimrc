@@ -8,7 +8,7 @@ execute pathogen#infect()
 
 
 
-"===== Formatting & Indentation =====
+"===== Formatting =====
 syntax enable               " syntax highlighting
 filetype plugin indent on   " filetype detection (not using this yet)
 
@@ -34,8 +34,23 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 "NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <Nul> :NERDTreeToggle<CR>
 
 "vim-airline
 set laststatus=2            " always show the status bar
 set ttimeoutlen=50          " shorten pause after leaving insert mode
+
+
+
+"===== Misc Mappings =====
+
+" use ctrl-n to toggle numbers
+function! NumberNo()
+    set nonumber
+    map <C-n> :call NumberYes()<CR>
+endfunction
+function! NumberYes()
+    set number
+    map <C-n> :call NumberNo()<CR>
+endfunction
+map <C-n> :call NumberNo()<CR>
