@@ -60,3 +60,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" jump to last position
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g`\"" | endif
+endif
