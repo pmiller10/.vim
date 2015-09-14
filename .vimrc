@@ -54,3 +54,9 @@ function! NumberYes()
     map <C-n> :call NumberNo()<CR>
 endfunction
 map <C-n> :call NumberNo()<CR>
+
+" ctrl-w-<motion> is awkward, so just use ctrl-<motion> to switch windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
