@@ -1,10 +1,28 @@
-" VIM Settings
+" Settings
 
 
 
 "===== Package Management =====
 " load plugins in .vim/bundle directory
-execute pathogen#infect()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" My plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'henrik/vim-indexed-search'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 
 
