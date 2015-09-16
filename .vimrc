@@ -1,11 +1,12 @@
-" Settings
+" Paul's Settings
 
 
 
 "===== Package Management =====
+
 " load plugins in .vim/bundle directory
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible            " be iMproved, required by vundle
+filetype off                " required by vundle
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -21,15 +22,13 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()           " required by vundle
+filetype plugin indent on   " required by vundle
 
 
 
 "===== Formatting =====
 syntax enable               " syntax highlighting
-filetype plugin indent on   " filetype detection (not using this yet)
-
 set smartindent             " (usually) indent properly
 set expandtab               " tab = spaces
 set tabstop=4               " 1 tab = 4 spaces
@@ -50,11 +49,6 @@ set incsearch               " highlight first match as you type search
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
-
-" NERDTree
-" map Tab-o to open/toggle NERDTree
-" remember: <C-I> == Tab key
-map <C-I>o :NERDTreeToggle<CR>
 
 " vim-airline
 set laststatus=2            " always show the status bar
@@ -81,6 +75,10 @@ map <C-I>h <C-w>h
 map <C-I>j <C-w>j
 map <C-I>k <C-w>k
 map <C-I>l <C-w>l
+
+" map Tab-o to open/toggle NERDTree
+map <C-I>o :NERDTreeToggle<CR>
+
 
 " jump to last position
 if has("autocmd")

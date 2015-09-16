@@ -13,3 +13,5 @@ ln -s .vim/.vimrc .vimrc
 ## Plugins
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - Lists the total number of search results and index of current match.
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - Solarized colorscheme.
+* [vim-airline](https://github.com/bling/vim-airline) - Lightweight status bar.
+* [nerdtree](https://github.com/scrooloose/nerdtree) - File browser.
