@@ -4,6 +4,8 @@ My Vim settings.
 ## Setup
 1. Clone the repo into your home directory.
 2. Then create a symlink from the .vimrc in the repo to your home directory:
+3. Clone vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+4. Install plugins: open any file with vim and execute :PluginInstall
 ```shell
 ln -s .vim/.vimrc .vimrc
 ```
