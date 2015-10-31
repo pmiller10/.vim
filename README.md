@@ -16,6 +16,20 @@ My Vim settings.
 
 4. Install plugins: open any file with vim and execute `:PluginInstall`
 
+
+## Troubleshooting
+
+If you're using git and get this error when you try to make a commit:
+
+```
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+```
+
+Then update your git config with
+   `git config --global core.editor $(which vim)`
+
+
 ## Plugins
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search) - Lists the total number of search results and index of current match.
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - Solarized colorscheme.
