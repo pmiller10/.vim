@@ -29,7 +29,6 @@ filetype plugin indent on   " required by vundle
 
 "===== Formatting =====
 syntax enable               " syntax highlighting
-set smartindent             " (usually) indent properly
 set expandtab               " tab = spaces
 set tabstop=4               " 1 tab = 4 spaces
 set shiftwidth=4            " autoindents = 4 spaces
