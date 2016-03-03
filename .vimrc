@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'henrik/vim-indexed-search'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()           " required by vundle
@@ -40,6 +41,8 @@ set nu                      " line numbers
 set hlsearch                " highlight all search results
 set incsearch               " highlight first match as you type search
 
+" search for visually selected text
+vnoremap // y/<C-R>"<CR>
 
 
 "===== Plugin Settings =====
