@@ -81,6 +81,21 @@ map <C-I>l <C-w>l
 " map Tab-o to open/toggle NERDTree
 map <C-I>o :NERDTreeToggle<CR>
 
+" use F1/F2 to search for the next function below/above (for python)
+map <F1> /def <CR>
+map <F2> ?def <CR>
+
+" use F3/F4 to search for the next class below/above (for python)
+map <F3> /class <CR>
+map <F4> ?class <CR>
+
+" use F5/F6 to search for the next class below/above (for react.js)
+map <F5> /React.createClass<CR>
+map <F6> ?React.createClass<CR>
+
+" search for word under cursor in current directory with grep
+:nnoremap <F12> :grep <C-R><C-W> *<CR>
+
 
 " jump to last position
 if has("autocmd")
