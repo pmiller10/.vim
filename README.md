@@ -18,6 +18,13 @@ My Vim setup.
 
 4. Install plugins: open any file with vim and execute `:PluginInstall`
 
+## Optional Setup
+
+5. Install [Exuberant ctags](http://scholarslab.org/research-and-development/code-spelunking-with-ctags-and-vim/)
+
+6. Create tags:
+   `ctags -R --python-kinds=-i`
+
 
 ## Troubleshooting
 
@@ -30,6 +37,9 @@ Please supply the message using either -m or -F option.
 
 Then update your git config with
    `git config --global core.editor $(which vim)`
+
+If you're having trouble with ctags, then run
+   `PATH=/usr/local/bin:$PATH`
 
 
 ## Plugins

@@ -44,6 +44,10 @@ set incsearch               " highlight first match as you type search
 " search for visually selected text
 vnoremap // y/<C-R>"<CR>
 
+" open current word as a tag in a vertical split
+map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+set tags=tags;              " travel up the current directory to find tags file
+
 
 "===== Plugin Settings =====
 
