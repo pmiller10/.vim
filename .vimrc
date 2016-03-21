@@ -21,6 +21,7 @@ Plugin 'henrik/vim-indexed-search'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'rubik/vim-radon'
 
 " All of your Plugins must be added before the following line
 call vundle#end()           " required by vundle
@@ -84,6 +85,9 @@ map <C-I>l <C-w>l
 
 " map Tab-o to open/toggle NERDTree
 map <C-I>o :NERDTreeToggle<CR>
+
+" use cc for Cyclomatic Complexity
+:command Cyclo :Radon
 
 " use F1/F2 to search for the next function below/above (for python)
 map <F1> /def <CR>
